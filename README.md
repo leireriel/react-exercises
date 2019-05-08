@@ -8,15 +8,16 @@ First, run
 npm start
 ```
 
-Then, uncomment the code that you want to see<Enter>
-For example, uncomment code for HalfPage folder
+Then, uncomment the code that you want to see
+
+For example, uncomment code for **HalfPage** folder
 
 ```javascript
 import HalfPage from './HalfPage/index';
 import './HalfPage/HalfPage.css';
 ReactDOM.render(<HalfPage />, document.getElementById('root'));
 ```
-and comment code for ItemList folder
+and comment code for **ItemList** folder
 
 ```javascript
 // import ItemList from './ItemList/index';
