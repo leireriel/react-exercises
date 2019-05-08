@@ -1,0 +1,1 @@
+{"version":3,"sources":["HalfPage.css"],"names":[],"mappings":"AAAA,WACE,UAAW,CACX,qBACF","file":"main.828b4334.chunk.css","sourcesContent":[".half-page {\n  width: 50vw;\n  background-color: yellow;\n}"]}
