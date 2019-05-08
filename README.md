@@ -11,7 +11,7 @@ npm start
 Then, uncomment the code that you want to see on **index.js**
 
 
-For example, uncomment code for __HalfPage__ component
+For example, uncomment code for *HalfPage* component
 
 ```javascript
 import HalfPage from './HalfPage/index';
