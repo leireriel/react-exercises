@@ -1,0 +1,21 @@
+#root, .container {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-width: 500px;
+}
+.half-page {
+  position: absolute;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.half-page-left {
+  background-color: yellow;
+}
+.half-page-right {
+  top: 0;
+  left: 50%;
+  background-color: orange;
+}
