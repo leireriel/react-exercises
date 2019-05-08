@@ -5,7 +5,7 @@
 First, run
 
 ```
-npm start
+`npm start` or `yarn start`
 ```
 
 Then, uncomment the code that you want to see on **index.js**
