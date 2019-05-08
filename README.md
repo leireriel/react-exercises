@@ -1,6 +1,6 @@
 # Hi! This is my repo with learning exercises of #React
 
-## To see exercises you can uncomment some code on index.js:
+## To see exercises you can uncomment some code on index.js
 
 First, run
 
@@ -8,7 +8,7 @@ First, run
 npm start
 ```
 
-Then, uncomment the code that you want to see
+Then, uncomment the code that you want to see<Enter>
 For example, uncomment code for HalfPage folder
 
 ```javascript
