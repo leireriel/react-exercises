@@ -1,6 +1,6 @@
-#1 Hi! This is my repo with learning exercises of #React
+# Hi! This is my repo with learning exercises of #React
 
-#2 To see exercises you can uncomment some code on index.js:
+## To see exercises you can uncomment some code on index.js:
 
 First, run
 
@@ -24,7 +24,7 @@ and comment code for ItemList folder
 // ReactDOM.render(<ItemList />, document.getElementById('root'));
 ```
 
-#2 This is the list of exercises. Each of them have their own folder
+## This is the list of exercises. Each of them have their own folder
 1. ItemList
 
 2. HalfPage
