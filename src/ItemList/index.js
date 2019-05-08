@@ -4,10 +4,8 @@ import Item from './Item';
 const food = [
   {
     name: 'Cereales con chocolate',
-    description: 'Cereales rellenos de chocolate',
     quantity: 2,
-    category: 'Cereales',
-    price: 5,
+    price: 4,
   },
   {
     name: 'Hamburguesa con queso',
@@ -23,6 +21,13 @@ const food = [
     category: 'Bebida',
     price: 5,
   },
+  {
+    name: 'Sandía',
+    description: 'Una sandía muy gorda',
+    quantity: 1,
+    category: 'Fruta',
+    price: 3,
+  }
 ];
 
 class ItemList extends React.Component {
@@ -30,7 +35,7 @@ class ItemList extends React.Component {
     const priceLessThan10 = food.filter(item => item.price < 10);
     return (
       <ul className="item-list">
-        {priceLessThan10.map(item => { 
+        {priceLessThan10.map(item => {
           return (
             <li>
               <Item
@@ -41,7 +46,7 @@ class ItemList extends React.Component {
               price={item.price}
               />
             </li>
-          )
+          );
         })}
       </ul>
     )
