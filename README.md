@@ -1,6 +1,6 @@
-# Hi! This is my repo with learning exercises of #React
+# Hi! This is my repo with #reactJS learning exercises
 
-## To see exercises you can uncomment some code on index.js
+## To see the exercises in your browser:
 
 First, run
 
@@ -8,16 +8,17 @@ First, run
 npm start
 ```
 
-Then, uncomment the code that you want to see
+Then, uncomment the code that you want to see on **index.js**
 
-For example, uncomment code for **HalfPage** folder
+
+For example, uncomment code for __HalfPage__ component
 
 ```javascript
 import HalfPage from './HalfPage/index';
 import './HalfPage/HalfPage.css';
 ReactDOM.render(<HalfPage />, document.getElementById('root'));
 ```
-and comment code for **ItemList** folder
+and comment code for *ItemList* component
 
 ```javascript
 // import ItemList from './ItemList/index';
@@ -25,7 +26,9 @@ and comment code for **ItemList** folder
 // ReactDOM.render(<ItemList />, document.getElementById('root'));
 ```
 
-## This is the list of exercises. Each of them have their own folder
+## This is the list of exercises. Each of them is a component:
 1. ItemList
 
 2. HalfPage
+
+3. OnionHater
