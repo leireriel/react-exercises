@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ItemList from './ItemList/index';
-import './ItemList/ItemList.scss';
-ReactDOM.render(<ItemList />, document.getElementById('root'));
+// import ItemList from './ItemList';
+// import './ItemList/ItemList.scss';
+// ReactDOM.render(<ItemList />, document.getElementById('root'));
 
 
-// import HalfPage from './HalfPage/index';
+// import HalfPage from './HalfPage';
 // import './HalfPage/HalfPage.scss';
 // ReactDOM.render(
 //   <HalfPage>
@@ -20,3 +20,7 @@ ReactDOM.render(<ItemList />, document.getElementById('root'));
 //     </ul>
 //   </HalfPage>,
 //   document.getElementById('root'));
+
+
+import OnionHater from './OnionHater';
+ReactDOM.render(<OnionHater />, document.getElementById('root'));
