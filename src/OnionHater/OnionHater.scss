@@ -1,16 +1,20 @@
 .title {
   text-align: center;
-  margin-bottom: 20px;
 }
 .textarea {
   width: 800px;
   height: 200px;
 }
+.img {
+  height: 150px;
+  padding: 30px;
+  border-radius: 100px;
+}
 .background {
-  padding: 50px;
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -18,5 +22,5 @@
   background-color: red;
 }
 .background-default {
-  background-color: rgb(240, 220, 194);
+  background-color: white;
 }
