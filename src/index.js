@@ -23,6 +23,7 @@ import ReactDOM from 'react-dom';
 
 
 import OnionHater from './OnionHater';
+import './OnionHater/OnionHater.scss';
 ReactDOM.render(<OnionHater />, document.getElementById('root'));
 
 
