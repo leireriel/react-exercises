@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.28cee408.chunk.css",
-    "main.js": "./static/js/main.d3e80095.chunk.js",
-    "main.js.map": "./static/js/main.d3e80095.chunk.js.map",
+    "main.js": "./static/js/main.b270728c.chunk.js",
+    "main.js.map": "./static/js/main.b270728c.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
     "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
     "static/js/2.652dea17.chunk.js": "./static/js/2.652dea17.chunk.js",
     "static/js/2.652dea17.chunk.js.map": "./static/js/2.652dea17.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.96dd283f741c722801d08edae210a52e.js": "./precache-manifest.96dd283f741c722801d08edae210a52e.js",
+    "precache-manifest.8bdd0bfb4586c507c715afa7775f444c.js": "./precache-manifest.8bdd0bfb4586c507c715afa7775f444c.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.28cee408.chunk.css.map": "./static/css/main.28cee408.chunk.css.map",
     "static/media/onionKawaii.jpg": "./static/media/onionKawaii.f00d6642.jpg"
