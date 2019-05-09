@@ -5,16 +5,16 @@ class OnionHater extends React.Component {
   constructor(props) {
     super(props);
     this.hateAlert = this.hateAlert.bind(this);
-    this.backgroundClass = 'background-default';
+    this.isHating = false;
   }
 
   hateAlert(event) {
     const trigger = event.target.value;
     const triggerLowerCase =  trigger.toLowerCase();
     if (triggerLowerCase.includes('cebolla')) {
-      this.backgroundClass = 'background-red';
+      this.isHating = 'background-red';
     } else {
-      this.backgroundClass = 'background-default';
+      this.isHating = false;
     }
     this.forceUpdate();
   }
@@ -22,7 +22,7 @@ class OnionHater extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className={`background ${this.backgroundClass}`}>
+        <div className={`background ${this.isHating}`}>
           <h1 className="title">¡No escribas <em>cebolla</em>!</h1>
           <img className="img" src={Onion} alt="Onion" />
           <textarea className="textarea" onKeyUp={this.hateAlert}></textarea>
