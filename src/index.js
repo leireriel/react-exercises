@@ -24,3 +24,7 @@ import ReactDOM from 'react-dom';
 
 import OnionHater from './OnionHater';
 ReactDOM.render(<OnionHater />, document.getElementById('root'));
+
+
+// import Destiny from './Destiny';
+// ReactDOM.render(<Destiny />, document.getElementById('root'));
