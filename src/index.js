@@ -42,6 +42,10 @@ import ReactDOM from 'react-dom';
 // import SpaceShips from './SpaceShips';
 // ReactDOM.render(<SpaceShips />, document.getElementById('root'));
 
-import btnBase from './btnBase';
-ReactDOM.render(<btnBase />, document.getElementById('root'));
+
+import BtnBase from './BtnBase';
+import './BtnBase/BtnBase.module.scss';
+import './BtnBase/BtnPrimary/BtnPrimary.module.scss';
+import './BtnBase/BtnOutline/BtnOutline.module.scss';
+ReactDOM.render(<BtnBase />, document.getElementById('root'));
 

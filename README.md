@@ -37,4 +37,4 @@ and comment code for *ItemList* component
 
 6. BlueSquare
 
-7. btnBase -- Practice with Node Modules
+7. BtnBase -- Practice with Node Modules

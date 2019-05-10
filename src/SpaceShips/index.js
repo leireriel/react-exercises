@@ -96,4 +96,4 @@ export default SpaceShips;
 //Si la función no usa this, no hay que poner el bind. Tampoco si lo ejecutamos nosotros. 
 //Sólo se pone bind cuando la función la ejecuta el componente o el navegador.
 
-//Mirarme también this.children
+//Mirarme también this.children y prop.children
