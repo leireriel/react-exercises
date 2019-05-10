@@ -2,7 +2,7 @@ import React from 'react';
 
 class Destiny extends React.Component {
   trip(event) {
-    const trigger = event.target.value;
+    const trigger = event.currentTarget.value;
     alert(`Tu destino es viajar a ${trigger}`);
   }
   render() {

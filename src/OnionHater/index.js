@@ -9,7 +9,7 @@ class OnionHater extends React.Component {
   }
 
   hateAlert(event) {
-    const trigger = event.target.value;
+    const trigger = event.currentTarget.value;
     const triggerLowerCase =  trigger.toLowerCase();
     if (triggerLowerCase.includes('cebolla')) {
       this.isHating = 'background-red';
