@@ -12,7 +12,7 @@ class OnionHater extends React.Component {
     const trigger = event.currentTarget.value;
     const triggerLowerCase =  trigger.toLowerCase();
     if (triggerLowerCase.includes('cebolla')) {
-      this.isHating = 'background-red';
+      this.isHating = true;
     } else {
       this.isHating = false;
     }
@@ -22,7 +22,7 @@ class OnionHater extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className={`background ${this.isHating}`}>
+        <div className={`background ${this.isHating === true ? 'background-red':''}`}>
           <h1 className="title">¡No escribas <em>cebolla</em>!</h1>
           <img className="img" src={Onion} alt="Onion" />
           <textarea className="textarea" placeholder="Hola, me llamo..." onKeyUp={this.hateAlert}></textarea>

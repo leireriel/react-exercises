@@ -31,5 +31,17 @@ import ReactDOM from 'react-dom';
 // ReactDOM.render(<Destiny />, document.getElementById('root'));
 
 
-import InputMirror from './InputMirror';
-ReactDOM.render(<InputMirror />, document.getElementById('root'));
+// import InputMirror from './InputMirror';
+// ReactDOM.render(<InputMirror />, document.getElementById('root'));
+
+
+// import BlueSquare from './BlueSquare';
+// ReactDOM.render(<BlueSquare />, document.getElementById('root'));
+
+
+// import SpaceShips from './SpaceShips';
+// ReactDOM.render(<SpaceShips />, document.getElementById('root'));
+
+import btnBase from './btnBase';
+ReactDOM.render(<btnBase />, document.getElementById('root'));
+

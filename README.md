@@ -34,3 +34,7 @@ and comment code for *ItemList* component
 4. Destiny
 
 5. InputMirror
+
+6. BlueSquare
+
+7. btnBase -- Practice with Node Modules
