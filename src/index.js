@@ -22,10 +22,14 @@ import ReactDOM from 'react-dom';
 //   document.getElementById('root'));
 
 
-import OnionHater from './OnionHater';
-import './OnionHater/OnionHater.scss';
-ReactDOM.render(<OnionHater />, document.getElementById('root'));
+// import OnionHater from './OnionHater';
+// import './OnionHater/OnionHater.scss';
+// ReactDOM.render(<OnionHater />, document.getElementById('root'));
 
 
 // import Destiny from './Destiny';
 // ReactDOM.render(<Destiny />, document.getElementById('root'));
+
+
+import InputMirror from './InputMirror';
+ReactDOM.render(<InputMirror />, document.getElementById('root'));
