@@ -19,5 +19,5 @@
 
 9. 
 
-##If you want to make a suggestion, please open an Issue. 
-##Thanks! 💌
+## If you want to make a suggestion, please open an Issue. 
+## Thanks! 💌
