@@ -1,4 +1,5 @@
 import React from 'react';
+import './BtnPrimary.module.scss';
 
 class BtnPrimary extends React.Component {
   render() {

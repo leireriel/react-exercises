@@ -1,4 +1,5 @@
 import React from 'react';
+import './HalfPage.scss';
 
 class HalfPage extends React.Component {
   render() {

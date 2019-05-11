@@ -2,6 +2,7 @@ import React from 'react';
 import BtnPrimary from './BtnPrimary';
 import BtnSecondary from './BtnSecondary';
 import BtnOutline from './BtnOutline';
+import './BtnBase.module.scss';
 
 class BtnBase extends React.Component {
   render() {

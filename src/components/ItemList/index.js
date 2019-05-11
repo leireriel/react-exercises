@@ -1,5 +1,6 @@
 import React from 'react';
-import Item from './Item';
+import Item from './components/Item';
+import './ItemList.scss';
 
 const food = [
   {

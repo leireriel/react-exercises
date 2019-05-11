@@ -28,7 +28,7 @@ class BlueSquare extends React.Component {
 
   render() {
     return (
-      <div className={`container ${this.state.background === true ? 'background-red' : 'background-blue'}`} onClick={this.handleClick} ></div>
+      <div className={`wrapper-square ${this.state.background === true ? 'background-red' : 'background-blue'}`} onClick={this.handleClick} ></div>
     );
 
   }
