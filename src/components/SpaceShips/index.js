@@ -1,17 +1,18 @@
 import React from 'react';
+import './SpaceShips.scss';
 
 const data = {
   "version": "v0.0.0",
   "palettes": [
     {
-      "name": "Tardis Blue",
-      "from": "Doctor Who",
+      "name": "Nostromo",
+      "from": "Alien",
       "colors": [
-        "003A6E",
-        "9B9A99",
-        "000000",
-        "FFFFFF",
-        "6F4500"
+        "08070C",
+        "F4F3F5",
+        "121828",
+        "464F75",
+        "9ABEF2"
       ]
     },
     {
@@ -23,6 +24,17 @@ const data = {
         "413A31",
         "746C66",
         "A32D2C"
+      ]
+    },
+    {
+      "name": "Tardis Blue",
+      "from": "Doctor Who",
+      "colors": [
+        "003A6E",
+        "9B9A99",
+        "000000",
+        "FFFFFF",
+        "6F4500"
       ]
     },
     {
@@ -46,54 +58,55 @@ const data = {
         "F1DB7E",
         "0C0C0C"
       ]
-    },
-    {
-      "name": "Nostromo",
-      "from": "Alien",
-      "colors": [
-        "08070C",
-        "F4F3F5",
-        "121828",
-        "464F75",
-        "9ABEF2"
-      ]
     }
   ]
 };
 
+class Spaceships extends React.Component {
+  constructor(props) {
+    super(props);
 
-class SpaceShips extends React.Component {
-  render(){
-    return(
+    this.logMyColor = this.logMyColor.bind(this);
+  }
+
+  logMyColor(event) {
+    const quien = event.currentTarget;
+    console.log(quien.innerHTML);
+    //Si la función no usa this, no hay que poner el bind. Tampoco si lo ejecutamos nosotros.
+    //Sólo se pone bind cuando la función la ejecuta el componente o el navegador.
+  }
+
+  render() {
+    return (
       <div className="App">
+        <h3 className="App__title">Mis paletas :D</h3>
         <ul className="palettes">
-        {data.palettes.map(item => {
-          return(
-            <li className="palettes__item">
-              <h2 className="palettes__title">{item.name}</h2>
-              <p>
-                <small>{item.from}</small> 
-              </p>
-              <ol>
-                {item.colors.map(color => <li>#{color}</li>)}
-                {/* De esta forma la variable color va a salir con cada item */}
-              </ol>
-              {/* small pone la letra más pequeña de forma proporcional */}
-            </li>
-          );
-        })}
+          {data.palettes.map((item, index) => {
+            return (
+              <li className="palettes__item" key={index}>
+                {/* El key se pone cada vez que haces .map */}
+                <h4 className="palettes__title">{item.name}</h4>
+                <p><small>{item.from}</small></p>
+                <ol className="palettes__colors">
+                  {item.colors.map((color, indexColor) => {
+                    return (
+                      <li
+                        style={{ backgroundColor: `#${color}` }}
+                        key={indexColor}
+                        onClick={this.logMyColor}
+                      >
+                        #{color}
+                      </li>)
+                  })}
+                </ol>
+              </li>
+            );
+          })}
         </ul>
       </div>
     );
   }
+
 }
 
-export default SpaceShips;
-
-
-//El key se pone cada vez que haces .map
-
-//Si la función no usa this, no hay que poner el bind. Tampoco si lo ejecutamos nosotros. 
-//Sólo se pone bind cuando la función la ejecuta el componente o el navegador.
-
-//Mirarme también this.children y prop.children
+export default Spaceships;

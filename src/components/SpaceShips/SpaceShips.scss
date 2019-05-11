@@ -1,0 +1,14 @@
+.palettes {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: flex-end;
+}
+.palettes__item {
+  margin: 0 30px;
+  min-width: 180px;
+}
+.palettes__colors {
+  list-style: none;
+  padding: 0;
+}
