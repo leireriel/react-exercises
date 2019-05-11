@@ -1,7 +1,7 @@
 @import "../BtnBase.module.scss";
 
 .btnSecondary {
-  @extend .btn__base;
+  @extend .btnBase;
   background-color: #00aaff;
   color: white;
 }

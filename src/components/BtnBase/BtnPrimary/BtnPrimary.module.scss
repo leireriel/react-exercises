@@ -1,7 +1,7 @@
 @import "../BtnBase.module.scss";
 
-.btn__primary {
-  @extend .btn__base;
+.btnPrimary {
+  @extend .btnBase;
   background-color: pink;
   color: red;
 }

@@ -2,13 +2,13 @@ import React from 'react';
 import BtnPrimary from './BtnPrimary';
 import BtnSecondary from './BtnSecondary';
 import BtnOutline from './BtnOutline';
-import './BtnBase.module.scss';
+import style from './BtnBase.module.scss';
 
 class BtnBase extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <button className="btn__base">COMMON BUTTON</button>
+        <button className={style.btnBase}>COMMON BUTTON</button>
         <BtnPrimary />
         <BtnSecondary />
         <BtnOutline />

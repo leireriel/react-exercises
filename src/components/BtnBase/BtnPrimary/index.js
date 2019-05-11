@@ -1,10 +1,10 @@
 import React from 'react';
-import './BtnPrimary.module.scss';
+import style from './BtnPrimary.module.scss';
 
 class BtnPrimary extends React.Component {
   render() {
     return (
-      <button className="btn__primary">PRIMARY BUTTON</button>
+      <button className={style.btnPrimary}>PRIMARY BUTTON</button>
     );
   }
 }

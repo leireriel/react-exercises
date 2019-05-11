@@ -1,7 +1,7 @@
 @import "../BtnBase.module.scss";
 
-.btn__outline {
-  @extend .btn__base;
+.btnOutline {
+  @extend .btnBase;
   background-color: transparent;
   color: #00aaff;
   border: 2px solid #00aaff;
