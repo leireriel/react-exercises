@@ -1,5 +1,7 @@
 import React from 'react';
 import './SheepCounter.scss';
+import Sheep from './components/Sheep';
+import SheepImg from './images/sheep.png';
 
 class SheepCounter extends React.Component {
   constructor(props) {
@@ -14,6 +16,14 @@ class SheepCounter extends React.Component {
     this.setState({
       counter: this.state.counter + 1,
     });
+    return (
+      console.log(this.state.counter * (
+        this.img =
+        <Sheep
+          link={SheepImg}
+        />
+      ))
+    );
   }
 
   render() {
@@ -28,6 +38,7 @@ class SheepCounter extends React.Component {
             {`Count :)`}
           </button>
         </div>
+        {this.img}
       </React.Fragment>
     );
   }
