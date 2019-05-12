@@ -70,8 +70,8 @@ class Spaceships extends React.Component {
   }
 
   logMyColor(event) {
-    const quien = event.currentTarget;
-    console.log(quien.innerHTML);
+    const trigger = event.currentTarget;
+    console.log(trigger.innerHTML);
     //Si la función no usa this, no hay que poner el bind. Tampoco si lo ejecutamos nosotros.
     //Sólo se pone bind cuando la función la ejecuta el componente o el navegador.
   }
