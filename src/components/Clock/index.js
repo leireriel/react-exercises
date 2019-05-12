@@ -14,13 +14,26 @@ class Clock extends React.Component {
     this.setState({
       time: new Date(),
     });
-    console.log(this.state.time);
   }
 
   render() {
     return (
-      // <p>{this.state.time}</p>
-      <div>w</div>
+      <React.Fragment>
+        <span className="hours">
+          {this.state.time.getHours()}
+          <small>hours</small>
+        </span>
+        <span> : </span>
+        <span className="minutes">
+        {this.state.time.getMinutes()}
+        <small>mins</small>
+        </span>
+        <span> : </span>
+        <span className="seconds">
+        {this.state.time.getSeconds()}
+        <small>secs</small>        
+        </span>
+      </React.Fragment>
     );
   }
 }
