@@ -7,7 +7,8 @@ import React from 'react';
 // import BlueSquare from './components/BlueSquare';
 // import SpaceShips from './components/SpaceShips';
 // import BtnBase from './components/BtnBase';
-import Clock from './components/Clock';
+// import Clock from './components/Clock';
+import SheepCounter from './components/SheepCounter';
 
 class App extends React.Component {
   render() {
@@ -46,8 +47,11 @@ class App extends React.Component {
         {/* <h2>Exercise 8. BtnBase -- Practice with Node Modules</h2>
         <BtnBase /> */}
 
-        <h2>Exercise 9. Clock</h2>
-        <Clock />
+        {/* <h2>Exercise 9. Clock</h2>
+        <Clock /> */}
+
+        <h2>Exercise 10. SheepCounter</h2>
+        <SheepCounter />
 
       </React.Fragment>
     );

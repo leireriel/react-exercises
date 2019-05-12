@@ -43,7 +43,9 @@ and comment code for *BlueSquare* component
 
 9. Clock
 
-10. 
+10. SheepCounter
+
+11. 
 
 ## If you want to make a suggestion, please open an Issue.
 ## Thanks! 💌
