@@ -8,9 +8,30 @@ import React from 'react';
 // import SpaceShips from './components/SpaceShips';
 // import BtnBase from './components/BtnBase';
 // import Clock from './components/Clock';
-import SheepCounter from './components/SheepCounter';
+// import SheepCounter from './components/SheepCounter';
+import FilmsForm from './components/FilmsForm';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      name: '',
+      text: '',
+      language: ''
+    }
+
+    this.handleForm = this.handleForm.bind(this);
+  }
+
+  handleForm(event) {
+    const value = event.currentTarget.value;
+    const id = event.currentTarget.id;
+    const info = {};
+    info[id] = value;
+    this.setState(info);
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -50,8 +71,14 @@ class App extends React.Component {
         {/* <h2>Exercise 9. Clock</h2>
         <Clock /> */}
 
-        <h2>Exercise 10. SheepCounter</h2>
-        <SheepCounter />
+        {/* <h2>Exercise 10. SheepCounter</h2>
+        <SheepCounter /> */}
+
+        <h2>Exercise 11. FilmsForm</h2>
+        <FilmsForm
+        action={this.handleForm}
+        state={this.state}
+        />
 
       </React.Fragment>
     );

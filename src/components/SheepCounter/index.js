@@ -8,6 +8,7 @@ class SheepCounter extends React.Component {
     super(props);
     this.state = {
       counter: 0,
+      //img
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -17,12 +18,10 @@ class SheepCounter extends React.Component {
       counter: this.state.counter + 1,
     });
     return (
-      console.log(this.state.counter * (
-        this.img =
-        <Sheep
-          link={SheepImg}
-        />
-      ))
+      this.img =
+      <Sheep
+        link={SheepImg}
+      />
     );
   }
 
