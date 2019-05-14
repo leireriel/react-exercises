@@ -16,20 +16,24 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      name: '',
-      text: '',
-      language: ''
-    }
+      userInfo: {
+        name: '',
+        text: '',
+        language: ''
+      }
+    };
 
-    this.handleForm = this.handleForm.bind(this);
+    this.handleFormChange = this.handleFormChange.bind(this);
   }
 
-  handleForm(event) {
+  handleFormChange(event) {
     const value = event.currentTarget.value;
     const id = event.currentTarget.id;
-    const info = {};
-    info[id] = value;
-    this.setState(info);
+    this.setState((prevState, props) => {
+      const newUserInfo = {...prevState.userInfo};
+      newUserInfo[id] = value;
+      return {userInfo: newUserInfo};
+    });
   }
 
   render() {
@@ -76,8 +80,8 @@ class App extends React.Component {
 
         <h2>Exercise 11. FilmsForm</h2>
         <FilmsForm
-        action={this.handleForm}
-        state={this.state}
+          action={this.handleFormChange}
+          state={this.state.userInfo}
         />
 
       </React.Fragment>
