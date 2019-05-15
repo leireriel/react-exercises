@@ -26,7 +26,7 @@ class OnionHater extends React.Component {
         <div className={`background ${this.isHating === true ? 'background-red':''}`}>
           <h3 className="title">¡No escribas <em>cebolla</em>!</h3>
           <img className="img" src={Onion} alt="Onion" />
-          <textarea className="textarea" placeholder="Hola, me llamo..." onKeyUp={this.hateAlert}></textarea>
+          <textarea className="textareaOnion" placeholder="Hola, me llamo..." onKeyUp={this.hateAlert}></textarea>
         </div>
       </React.Fragment>
     );

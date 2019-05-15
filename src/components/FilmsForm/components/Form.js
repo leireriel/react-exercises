@@ -9,7 +9,7 @@ class Form extends React.Component {
         <input type="text" className="input" onChange={action} id="name"/>
         <label htmlFor="Nombre">Nombre</label>
 
-        <textarea name="" id="text" cols="30" rows="10" className="texarea" onChange={action}></textarea>
+        <textarea className="textareaMovies" name="" id="text" cols="30" rows="3" className="texarea" onChange={action}></textarea>
 
         <select name="" id="language" className="select" onChange={action}>
           <option value="Inglés">Inglés</option>
