@@ -8,34 +8,10 @@ import React from 'react';
 // import SpaceShips from './components/SpaceShips';
 // import BtnBase from './components/BtnBase';
 // import Clock from './components/Clock';
-// import SheepCounter from './components/SheepCounter';
-import FilmsForm from './components/FilmsForm';
+import SheepCounter from './components/SheepCounter';
+// import FilmsForm from './components/FilmsForm';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      userInfo: {
-        name: '',
-        text: '',
-        language: ''
-      }
-    };
-
-    this.handleFormChange = this.handleFormChange.bind(this);
-  }
-
-  handleFormChange(event) {
-    const value = event.currentTarget.value;
-    const id = event.currentTarget.id;
-    this.setState((prevState, props) => {
-      const newUserInfo = {...prevState.userInfo};
-      newUserInfo[id] = value;
-      return {userInfo: newUserInfo};
-    });
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -75,14 +51,11 @@ class App extends React.Component {
         {/* <h2>Exercise 9. Clock</h2>
         <Clock /> */}
 
-        {/* <h2>Exercise 10. SheepCounter</h2>
-        <SheepCounter /> */}
+        <h2>Exercise 10. SheepCounter</h2>
+        <SheepCounter />
 
-        <h2>Exercise 11. FilmsForm</h2>
-        <FilmsForm
-          action={this.handleFormChange}
-          state={this.state.userInfo}
-        />
+        {/* <h2>Exercise 11. FilmsForm</h2>
+        <FilmsForm /> */}
 
       </React.Fragment>
     );

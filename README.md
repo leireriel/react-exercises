@@ -49,5 +49,4 @@ and comment code for *BlueSquare* component
 
 12. 
 
-## If you want to make a suggestion, please open an Issue.
-## Thanks! 💌
+## If you want to make a suggestion, please open an Issue. <br /><br />Thanks! 💌
