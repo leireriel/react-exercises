@@ -36,9 +36,9 @@ class ItemList extends React.Component {
     const priceLessThan10 = food.filter(item => item.price < 10);
     return (
       <ul className="item-list">
-        {priceLessThan10.map(item => {
+        {priceLessThan10.map((item, index) => {
           return (
-            <li>
+            <li key={index}>
               <Item
               name={item.name}
               description={item.description}

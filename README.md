@@ -47,6 +47,10 @@ and comment code for *BlueSquare* component
 
 11. DinamicForm
 
-12. 
+12. MimimiTranslator
+
+13. NumberFilter
+
+14. 
 
 ## If you want to make a suggestion, please open an Issue. <br /><br />Thanks! 💌

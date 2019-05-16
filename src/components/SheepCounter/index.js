@@ -37,9 +37,11 @@ class SheepCounter extends React.Component {
             {`Count :)`}
           </button>
         </div>
-        <div className="image__container">
-          {img}
-        </div>
+        <ul className="image__list">
+          {img.map((item, index) => {
+            return <li key={index}>{item}</li>
+          })}
+        </ul>
       </React.Fragment >
     );
   }
