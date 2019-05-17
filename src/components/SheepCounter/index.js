@@ -19,7 +19,6 @@ class SheepCounter extends React.Component {
       const newAll = { ...prevState.all };
       newAll.counter++;
       newAll.img.push(<Sheep key={newAll.counter - 1} />);
-      console.log(newAll.counter - 1);
       return { all: newAll };
     });
   }

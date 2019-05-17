@@ -12,3 +12,19 @@
   list-style: none;
   padding: 0;
 }
+.title__container {
+  display: flex;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.arrow {
+  color: yellow;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 15px;
+}

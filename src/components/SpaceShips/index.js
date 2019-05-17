@@ -65,8 +65,11 @@ const data = {
 class Spaceships extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      collapsable: [true, false, false, false, false]
+    }
     this.logMyColor = this.logMyColor.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   logMyColor(event) {
@@ -76,17 +79,36 @@ class Spaceships extends React.Component {
     //Sólo se pone bind cuando la función la ejecuta el componente o el navegador.
   }
 
+  handleClick(event) {
+    const trigger = event.currentTarget;
+    this.setState((prevState, props) => {
+      // const newCollapsable = { ...prevState.collapsable };
+      // {trigger === newCollapsable[0] ? newCollapsable:[true, false, false, false, false] :
+      //   trigger === newCollapsable[1] ? newCollapsable:[false, true, false, false, false] :
+      //   trigger === newCollapsable[2] ? newCollapsable:[false, false, true, false, false] :
+      //   trigger === newCollapsable[3] ? newCollapsable:[false, false, false, true, false] :
+      //   trigger === newCollapsable[4] ? newCollapsable:[false, false, false, false, true]};      
+        // return { collapsable: newCollapsable };
+    });
+    console.log(trigger);
+  }
+
   render() {
     return (
-      <div className="App">
-        <h3 className="App__title">Mis paletas :D</h3>
+      <React.Fragment>
+        <h3 className="App__title">Elige una paleta de colores :D</h3>
         <ul className="palettes">
           {data.palettes.map((item, index) => {
             return (
               <li className="palettes__item" key={index}>
                 {/* El key se pone cada vez que haces .map */}
-                <h4 className="palettes__title">{item.name}</h4>
-                <p><small>{item.from}</small></p>
+                <div className="title__container" onClick={this.handleClick}>
+                  <div className="text__container">
+                    <h4 className="palettes__title">{item.name}</h4>
+                    <p><small>{item.from}</small></p>
+                  </div>
+                  <i className="fas fa-arrows-alt-v arrow"></i>
+                </div>
                 <ol className="palettes__colors">
                   {item.colors.map((color, indexColor) => {
                     return (
@@ -103,7 +125,7 @@ class Spaceships extends React.Component {
             );
           })}
         </ul>
-      </div>
+      </React.Fragment>
     );
   }
 
