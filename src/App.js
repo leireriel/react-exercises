@@ -1,17 +1,17 @@
 import React from 'react';
-// import ItemList from './components/ItemList';
-// import HalfPage from './components/HalfPage';
-// import OnionHater from './components/OnionHater';
-// import Destiny from './components/Destiny';
-// import InputMirror from './components/InputMirror';
-// import BlueSquare from './components/BlueSquare';
-// import SpaceShips from './components/SpaceShips';
-// import BtnBase from './components/BtnBase';
-// import Clock from './components/Clock';
-// import SheepCounter from './components/SheepCounter';
-// import FilmsForm from './components/FilmsForm';
-// import MimimiTranslator from './components/MimimiTranslator';
-// import NumberFilter from './components/NumberFilter';
+import ItemList from './components/ItemList';
+import HalfPage from './components/HalfPage';
+import OnionHater from './components/OnionHater';
+import Destiny from './components/Destiny';
+import InputMirror from './components/InputMirror';
+import BlueSquare from './components/BlueSquare';
+import SpaceShips from './components/SpaceShips';
+import BtnBase from './components/BtnBase';
+import Clock from './components/Clock';
+import SheepCounter from './components/SheepCounter';
+import FilmsForm from './components/FilmsForm';
+import MimimiTranslator from './components/MimimiTranslator';
+import NumberFilter from './components/NumberFilter';
 import Directory from './components/Directory';
 
 class App extends React.Component {
@@ -20,7 +20,7 @@ class App extends React.Component {
       <React.Fragment>
         <h1>Exercises</h1>
 
-        {/* <h2>Exercise 1. Itemlist</h2>
+        <h2>Exercise 1. Itemlist</h2>
         <ItemList />
 
         <h2>Exercise 2. Halfpage</h2>
@@ -64,7 +64,7 @@ class App extends React.Component {
         <MimimiTranslator />
 
         <h2>Exercise 13. NumberFilter</h2>
-        <NumberFilter /> */}
+        <NumberFilter />
 
         <h2>Exercise 14. Directory</h2>
         <Directory />

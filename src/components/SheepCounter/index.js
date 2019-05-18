@@ -1,6 +1,7 @@
 import React from 'react';
+import Counter from './components/Counter';
+import SheepList from './components/SheepList';
 import './SheepCounter.scss';
-import Sheep from './components/Sheep';
 
 class SheepCounter extends React.Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class SheepCounter extends React.Component {
         img: []
       }
     };
+    this.img = require('./images/sheep.png');
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -18,7 +20,7 @@ class SheepCounter extends React.Component {
     this.setState((prevState, props) => {
       const newAll = { ...prevState.all };
       newAll.counter++;
-      newAll.img.push(<Sheep key={newAll.counter - 1} />);
+      newAll.img.push(this.img);
       return { all: newAll };
     });
   }
@@ -27,20 +29,8 @@ class SheepCounter extends React.Component {
     const { counter, img } = this.state.all;
     return (
       <React.Fragment >
-        <h3 className="title">Push button counter</h3>
-        <div className="wrapper">
-          <h4 className="counter">{counter}</h4>
-          <button
-            className="button"
-            onClick={this.handleClick}>
-            {`Count :)`}
-          </button>
-        </div>
-        <ul className="image__list">
-          {img.map((item, index) => {
-            return <li key={index}>{item}</li>
-          })}
-        </ul>
+        <Counter counter={counter} action={this.handleClick}/>
+        <SheepList img={img}/>
       </React.Fragment >
     );
   }
