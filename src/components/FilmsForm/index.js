@@ -6,15 +6,13 @@ import './FilmsForm.scss';
 class FilmsForm extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       userInfo: {
-        title: '',
-        theme: '',
-        language: ''
+        title: null,
+        theme: null,
+        language: null
       }
     };
-
     this.handleFormChange = this.handleFormChange.bind(this);
   }
 

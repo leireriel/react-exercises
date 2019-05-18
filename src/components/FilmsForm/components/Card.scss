@@ -1,4 +1,11 @@
 .card {
+  display: flex;
   border: 2px solid blue;
-  width: 400px;
+  width: 30vw;
+  padding: 15px;
+  background-color: rgb(235, 235, 247);
+}
+
+.title__movie, .theme__movie, .language__movie {
+  color: rgb(255, 0, 170);
 }
