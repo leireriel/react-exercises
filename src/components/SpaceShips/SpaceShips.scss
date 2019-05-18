@@ -32,6 +32,9 @@
   cursor: zoom-in;
   height: 30px;
 }
+.color__band:hover {
+  border: 2px solid yellow;
+}
 .display__none {
   display: none;
 }

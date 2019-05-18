@@ -74,7 +74,8 @@ class Spaceships extends React.Component {
 
   logMyColor(event) {
     const trigger = event.currentTarget;
-    alert('You clicked color ' + trigger.innerHTML);
+    const colorTrigger = trigger.getAttribute('data');
+    alert('You chose color ' + colorTrigger);
   }
 
   handleClick(event) {
@@ -107,6 +108,7 @@ class Spaceships extends React.Component {
                         style={{ backgroundColor: `#${color}` }}
                         key={indexColor}
                         onClick={this.logMyColor}
+                        data={color}
                       >
                       </li>)
                   })}
