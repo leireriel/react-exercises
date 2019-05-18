@@ -2,13 +2,13 @@ import React from 'react';
 
 class Translator extends React.Component {
   replaceVowels({ text }) {
-    return text.replace(/[aeiou]/gi, 'i');
+    return text.replace(/[aeiouáéíóú]/gi, 'i');
   }
 
   render() {
     const { text } = this.props;
     return (
-      <p>{this.replaceVowels({ text })}</p>
+      <p className="translator__parragraph">{this.replaceVowels({ text })}</p>
     );
   }
 }

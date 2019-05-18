@@ -1,28 +1,51 @@
 import React from 'react';
+import './Form.scss';
 
 class Form extends React.Component {
   render() {
-    const {action} = this.props;
-    const {name, text, language} = this.props.state;
+    const { action } = this.props;
     return (
-      <div>
-        <input type="text" className="input" onChange={action} id="name"/>
-        <label htmlFor="Nombre">Nombre</label>
+      <form className="form">
+        <label htmlFor="title">Título</label>
+        <input
+          className="input"
+          id="title"
+          type="text"
+          placeholder="Harry Potter y la piedra filosofal"
+          onChange={action}
+        />
 
-        <textarea className="textareaMovies" name="" id="text" cols="30" rows="3" onChange={action}></textarea>
+        <label htmlFor="theme">De qué trata</label>
+        <textarea
+          className="textareaMovies"
+          id="theme"
+          name="theme"
+          cols="30"
+          rows="1"
+          placeholder="Un mundo mágico..."
+          onChange={action}>
+        </textarea>
 
-        <select name="" id="language" className="select" onChange={action}>
-          <option value="Inglés">Inglés</option>
-          <option value="Español">Español</option>
-          <option value="Portugués">Portugués</option>
+        <label htmlFor="language">Idioma</label>
+        <select
+          className="select"
+          id="language"
+          name="lang"
+          onChange={action}>
+          <option
+            value="Inglés">
+            Inglés
+          </option>
+          <option
+            value="Español">
+            Español
+          </option>
+          <option
+            value="Portugués">
+            Portugués
+          </option>
         </select>
-
-        <div>
-          <h3>{name}</h3>
-          <p>{text}</p>
-          <p>{language}</p>
-        </div>
-      </div>
+      </form>
     );
   }
 }
