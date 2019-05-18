@@ -51,6 +51,8 @@ and comment code for *BlueSquare* component
 
 13. NumberFilter
 
-14. 
+14. Directory
+
+15. 
 
 ## If you want to make a suggestion, please open an Issue. <br /><br />Thanks! 💌

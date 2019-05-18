@@ -66,7 +66,7 @@ class Spaceships extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      collapsable: [true, false, false, false, false]
+      collapsable: 0
     }
     this.logMyColor = this.logMyColor.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -74,23 +74,14 @@ class Spaceships extends React.Component {
 
   logMyColor(event) {
     const trigger = event.currentTarget;
-    console.log(trigger.innerHTML);
-    //Si la función no usa this, no hay que poner el bind. Tampoco si lo ejecutamos nosotros.
-    //Sólo se pone bind cuando la función la ejecuta el componente o el navegador.
+    alert('You clicked color ' + trigger.innerHTML);
   }
 
   handleClick(event) {
-    const trigger = event.currentTarget;
-    this.setState((prevState, props) => {
-      // const newCollapsable = { ...prevState.collapsable };
-      // {trigger === newCollapsable[0] ? newCollapsable:[true, false, false, false, false] :
-      //   trigger === newCollapsable[1] ? newCollapsable:[false, true, false, false, false] :
-      //   trigger === newCollapsable[2] ? newCollapsable:[false, false, true, false, false] :
-      //   trigger === newCollapsable[3] ? newCollapsable:[false, false, false, true, false] :
-      //   trigger === newCollapsable[4] ? newCollapsable:[false, false, false, false, true]};      
-        // return { collapsable: newCollapsable };
+    const triggerId = event.currentTarget.id;
+    this.setState({
+      collapsable: triggerId,
     });
-    console.log(trigger);
   }
 
   render() {
@@ -101,23 +92,22 @@ class Spaceships extends React.Component {
           {data.palettes.map((item, index) => {
             return (
               <li className="palettes__item" key={index}>
-                {/* El key se pone cada vez que haces .map */}
-                <div className="title__container" onClick={this.handleClick}>
+                <div className="title__container" id={index} onClick={this.handleClick}>
                   <div className="text__container">
                     <h4 className="palettes__title">{item.name}</h4>
                     <p><small>{item.from}</small></p>
                   </div>
                   <i className="fas fa-arrows-alt-v arrow"></i>
                 </div>
-                <ol className="palettes__colors">
+                <ol className={`palettes__colors ${parseInt(this.state.collapsable) === index ? null : 'display__none'}`}>
                   {item.colors.map((color, indexColor) => {
                     return (
                       <li
+                        className="color__band"
                         style={{ backgroundColor: `#${color}` }}
                         key={indexColor}
                         onClick={this.logMyColor}
                       >
-                        #{color}
                       </li>)
                   })}
                 </ol>
