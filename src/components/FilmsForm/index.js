@@ -1,5 +1,7 @@
 import React from 'react';
 import Form from './components/Form';
+import Card from './components/Card';
+import './FilmsForm.scss';
 
 class FilmsForm extends React.Component {
   constructor(props) {
@@ -7,8 +9,8 @@ class FilmsForm extends React.Component {
 
     this.state = {
       userInfo: {
-        name: '',
-        text: '',
+        title: '',
+        theme: '',
         language: ''
       }
     };
@@ -28,10 +30,14 @@ class FilmsForm extends React.Component {
 
   render() {
     return (
-      <Form
-        action={this.handleFormChange}
-        state={this.state.userInfo}
-      />
+      <div className="form__card">
+        <Form
+          action={this.handleFormChange}
+        />
+        <Card
+          state={this.state.userInfo}
+        />
+      </div>
     );
   }
 }

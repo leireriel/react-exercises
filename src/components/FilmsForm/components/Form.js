@@ -1,28 +1,24 @@
 import React from 'react';
+import './Form.scss';
 
 class Form extends React.Component {
   render() {
-    const {action} = this.props;
-    const {name, text, language} = this.props.state;
+    const { action } = this.props;
     return (
-      <div>
-        <input type="text" className="input" onChange={action} id="name"/>
-        <label htmlFor="Nombre">Nombre</label>
+      <Form className="form">
+        <label htmlFor="title">Título</label>
+        <input type="text" className="input" onChange={action} id="title" />
 
-        <textarea className="textareaMovies" name="" id="text" cols="30" rows="3" onChange={action}></textarea>
+        <label htmlFor="theme">De qué trata</label>
+        <textarea className="textareaMovies" name="" id="theme" cols="30" rows="1" onChange={action}></textarea>
 
+        <label htmlFor="language">Idioma</label>
         <select name="" id="language" className="select" onChange={action}>
           <option value="Inglés">Inglés</option>
           <option value="Español">Español</option>
           <option value="Portugués">Portugués</option>
         </select>
-
-        <div>
-          <h3>{name}</h3>
-          <p>{text}</p>
-          <p>{language}</p>
-        </div>
-      </div>
+      </Form>
     );
   }
 }
