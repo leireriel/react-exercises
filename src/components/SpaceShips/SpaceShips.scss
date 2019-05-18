@@ -1,14 +1,37 @@
 .palettes {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  align-items: flex-end;
 }
 .palettes__item {
-  margin: 0 30px;
-  min-width: 180px;
+  margin: 30px;
+  width: 180px;
 }
 .palettes__colors {
   list-style: none;
   padding: 0;
+}
+.title__container {
+  display: flex;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 170px;
+}
+.arrow {
+  color: yellow;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.color__band {
+  cursor: zoom-in;
+  height: 30px;
+}
+.display__none {
+  display: none;
 }

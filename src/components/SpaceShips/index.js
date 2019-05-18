@@ -65,37 +65,49 @@ const data = {
 class Spaceships extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      collapsable: 0
+    }
     this.logMyColor = this.logMyColor.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   logMyColor(event) {
     const trigger = event.currentTarget;
-    console.log(trigger.innerHTML);
-    //Si la función no usa this, no hay que poner el bind. Tampoco si lo ejecutamos nosotros.
-    //Sólo se pone bind cuando la función la ejecuta el componente o el navegador.
+    alert('You clicked color ' + trigger.innerHTML);
+  }
+
+  handleClick(event) {
+    const triggerId = event.currentTarget.id;
+    this.setState({
+      collapsable: triggerId,
+    });
   }
 
   render() {
     return (
-      <div className="App">
-        <h3 className="App__title">Mis paletas :D</h3>
+      <React.Fragment>
+        <h3 className="App__title">Elige una paleta de colores :D</h3>
         <ul className="palettes">
           {data.palettes.map((item, index) => {
             return (
               <li className="palettes__item" key={index}>
-                {/* El key se pone cada vez que haces .map */}
-                <h4 className="palettes__title">{item.name}</h4>
-                <p><small>{item.from}</small></p>
-                <ol className="palettes__colors">
+                <div className="title__container" id={index} onClick={this.handleClick}>
+                  <div className="text__container">
+                    <h4 className="palettes__title">{item.name}</h4>
+                    <p><small>{item.from}</small></p>
+                  </div>
+                  <i className="fas fa-arrows-alt-v arrow"></i>
+                </div>
+                <ol className={`palettes__colors ${parseInt(this.state.collapsable) === index ? null : 'display__none'}`}>
                   {item.colors.map((color, indexColor) => {
                     return (
                       <li
+                        className="color__band"
                         style={{ backgroundColor: `#${color}` }}
                         key={indexColor}
                         onClick={this.logMyColor}
                       >
-                        #{color}
                       </li>)
                   })}
                 </ol>
@@ -103,7 +115,7 @@ class Spaceships extends React.Component {
             );
           })}
         </ul>
-      </div>
+      </React.Fragment>
     );
   }
 

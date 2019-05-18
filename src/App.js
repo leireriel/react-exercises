@@ -11,6 +11,8 @@ import Clock from './components/Clock';
 import SheepCounter from './components/SheepCounter';
 import FilmsForm from './components/FilmsForm';
 import MimimiTranslator from './components/MimimiTranslator';
+import NumberFilter from './components/NumberFilter';
+import Directory from './components/Directory';
 
 class App extends React.Component {
   render() {
@@ -60,6 +62,12 @@ class App extends React.Component {
 
         <h2>Exercise 12. MimimiTranslator</h2>
         <MimimiTranslator />
+
+        <h2>Exercise 13. NumberFilter</h2>
+        <NumberFilter />
+
+        <h2>Exercise 14. Directory</h2>
+        <Directory />
 
       </React.Fragment>
     );
