@@ -41,7 +41,7 @@ and comment code for *BlueSquare* component
 
 8. BtnBase -- Practice with Node Modules
 
-9. Clock
+9. ClockOrNot
 
 10. SheepCounter
 
