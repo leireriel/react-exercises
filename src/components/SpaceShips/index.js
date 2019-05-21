@@ -81,11 +81,16 @@ class Spaceships extends React.Component {
   handleClick(event) {
     const triggerId = event.currentTarget.id;
     this.setState(prevState => {
+
       const newCollapsable = prevState.collapsable;
       if (newCollapsable !== triggerId) {
-        return collapsable: triggerId;
+        return {
+          collapsable: triggerId
+        };
       } else {
-        return collapsable: null;
+        return {
+          collapsable: null
+        };
       }
     });
   }

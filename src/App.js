@@ -5,9 +5,9 @@ import React from 'react';
 // import Destiny from './components/Destiny';
 // import InputMirror from './components/InputMirror';
 // import BlueSquare from './components/BlueSquare';
-// import SpaceShips from './components/SpaceShips';
+import SpaceShips from './components/SpaceShips';
 // import BtnBase from './components/BtnBase';
-import ClockOrNot from './components/ClockOrNot';
+// import ClockOrNot from './components/ClockOrNot';
 // import SheepCounter from './components/SheepCounter';
 // import FilmsForm from './components/FilmsForm';
 // import MimimiTranslator from './components/MimimiTranslator';
@@ -43,17 +43,17 @@ class App extends React.Component {
         <InputMirror />
 
         <h2>Exercise 6. BlueSquare</h2>
-        <BlueSquare />
+        <BlueSquare /> */}
 
         <h2>Exercise 7. SpaceShips</h2>
         <SpaceShips />
- 
+ {/*
         <h2>Exercise 8. BtnBase -- Practice with Node Modules</h2>
-        <BtnBase /> */}
+        <BtnBase />
 
         <h2>Exercise 9. ClockOrNot</h2>
         <ClockOrNot />
-{/* 
+ 
         <h2>Exercise 10. SheepCounter</h2>
         <SheepCounter />
 
