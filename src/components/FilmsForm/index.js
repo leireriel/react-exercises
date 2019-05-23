@@ -28,7 +28,7 @@ class FilmsForm extends React.Component {
 
   render() {
     return (
-      <div className="form__card">
+      <div className="form__card-films">
         <Form
           action={this.handleFormChange}
         />

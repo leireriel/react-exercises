@@ -13,6 +13,8 @@ import FilmsForm from './components/FilmsForm';
 import MimimiTranslator from './components/MimimiTranslator';
 import NumberFilter from './components/NumberFilter';
 import Directory from './components/Directory';
+import DirectoryRoutes from './components/DirectoryRoutes';
+import PokeRepaso from './components/PokeRepaso';
 
 class App extends React.Component {
   render() {
@@ -68,6 +70,12 @@ class App extends React.Component {
 
         <h2>Exercise 14. Directory</h2>
         <Directory />
+
+        <h2>Exercise 15. DirectoryRoutes</h2>
+        <DirectoryRoutes />
+
+        <h2>Exercise 16. PokeRepaso</h2>
+        <PokeRepaso />
 
       </React.Fragment>
     );

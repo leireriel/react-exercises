@@ -53,6 +53,10 @@ and comment code for *BlueSquare* component
 
 14. Directory
 
-15. 
+15. DirectoryRoutes
+
+16. PokeRepaso
+
+17. 
 
 ## If you want to make a suggestion, please open an Issue. <br /><br />Thanks! 💌

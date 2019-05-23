@@ -1,4 +1,4 @@
-.card {
+.card-films {
   display: flex;
   border: 2px solid blue;
   width: 30vw;
@@ -6,6 +6,6 @@
   background-color: rgb(235, 235, 247);
 }
 
-.title__movie, .theme__movie, .language__movie {
+.title__movie-films, .theme__movie-films, .language__movie-films {
   color: rgb(255, 0, 170);
 }

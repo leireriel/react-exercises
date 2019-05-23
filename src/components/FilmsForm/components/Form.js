@@ -5,7 +5,7 @@ class Form extends React.Component {
   render() {
     const { action } = this.props;
     return (
-      <form className="form">
+      <form className="form-films">
         <label htmlFor="title">Título</label>
         <input
           className="input"
